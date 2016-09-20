@@ -1,0 +1,184 @@
+E:\web api\exam\ExamApplication\ExamApplication\bin\ApplicationInsights.config
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\csc.exe
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\System.Collections.Immutable.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\System.Reflection.Metadata.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\vbc.exe
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\VBCSCompiler.exe
+E:\web api\exam\ExamApplication\ExamApplication\bin\roslyn\VBCSCompiler.exe.config
+E:\web api\exam\ExamApplication\ExamApplication\bin\ExamApplication.dll.config
+E:\web api\exam\ExamApplication\ExamApplication\bin\ExamApplication.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\ExamApplication.pdb
+E:\web api\exam\ExamApplication\ExamApplication\bin\Antlr3.Runtime.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\EntityFramework.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\EntityFramework.SqlServer.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.Agent.Intercept.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.DependencyCollector.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.Web.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.WindowsServer.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.ApplicationInsights.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.Core.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Cookies.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Facebook.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Google.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.OAuth.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Twitter.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Web.Infrastructure.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Newtonsoft.Json.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Owin.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Net.Http.Formatting.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Helpers.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Http.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Http.Owin.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Http.WebHost.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Mvc.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Optimization.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Razor.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.WebPages.Deployment.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.WebPages.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.WebPages.Razor.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\WebGrease.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.DependencyCollector.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.Web.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AI.WindowsServer.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.ApplicationInsights.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Newtonsoft.Json.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Net.Http.Formatting.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Helpers.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Http.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Http.WebHost.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Mvc.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Optimization.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Razor.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.WebPages.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.WebPages.Deployment.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.WebPages.Razor.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Antlr3.Runtime.pdb
+E:\web api\exam\ExamApplication\ExamApplication\bin\EntityFramework.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\EntityFramework.SqlServer.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.Core.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Facebook.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Cookies.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.OAuth.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Google.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Twitter.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\web api\exam\ExamApplication\ExamApplication\bin\System.Web.Http.Owin.xml
+E:\web api\exam\ExamApplication\ExamApplication\obj\Debug\ExamApplication.csprojResolveAssemblyReference.cache
+E:\web api\exam\ExamApplication\ExamApplication\obj\Debug\ExamApplication.dll
+E:\web api\exam\ExamApplication\ExamApplication\obj\Debug\ExamApplication.pdb
+E:\web api\exam\ExamApplication\ExamApplication\bin\DAL.dll
+E:\web api\exam\ExamApplication\ExamApplication\bin\DAL.pdb
+V:\Programming\projects\ExamApplication\ExamApplication\bin\ApplicationInsights.config
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\csc.exe
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\System.Collections.Immutable.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\System.Reflection.Metadata.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\vbc.exe
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\VBCSCompiler.exe
+V:\Programming\projects\ExamApplication\ExamApplication\bin\roslyn\VBCSCompiler.exe.config
+V:\Programming\projects\ExamApplication\ExamApplication\bin\ExamApplication.dll.config
+V:\Programming\projects\ExamApplication\ExamApplication\bin\ExamApplication.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\ExamApplication.pdb
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Antlr3.Runtime.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\DAL.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\EntityFramework.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\EntityFramework.SqlServer.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.Agent.Intercept.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.DependencyCollector.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.Web.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.WindowsServer.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.ApplicationInsights.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.Core.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Cookies.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Facebook.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Google.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.OAuth.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Twitter.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Web.Infrastructure.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Newtonsoft.Json.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Owin.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Net.Http.Formatting.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Helpers.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Http.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Http.Owin.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Http.WebHost.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Mvc.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Optimization.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Razor.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.WebPages.Deployment.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.WebPages.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.WebPages.Razor.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\WebGrease.dll
+V:\Programming\projects\ExamApplication\ExamApplication\bin\DAL.pdb
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.DependencyCollector.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.Web.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AI.WindowsServer.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.ApplicationInsights.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Newtonsoft.Json.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Net.Http.Formatting.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Helpers.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Http.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Http.WebHost.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Mvc.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Optimization.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Razor.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.WebPages.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.WebPages.Deployment.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.WebPages.Razor.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Antlr3.Runtime.pdb
+V:\Programming\projects\ExamApplication\ExamApplication\bin\EntityFramework.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\EntityFramework.SqlServer.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.Core.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Facebook.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Cookies.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.OAuth.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Google.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.Twitter.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+V:\Programming\projects\ExamApplication\ExamApplication\bin\System.Web.Http.Owin.xml
+V:\Programming\projects\ExamApplication\ExamApplication\obj\Debug\ExamApplication.csprojResolveAssemblyReference.cache
+V:\Programming\projects\ExamApplication\ExamApplication\obj\Debug\ExamApplication.dll
+V:\Programming\projects\ExamApplication\ExamApplication\obj\Debug\ExamApplication.pdb

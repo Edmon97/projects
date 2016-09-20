@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Dal.Plane>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            <h3>
+                @Html.DisplayFor(modelItem => item.Id)</h3>
+        </td>
+        <td>
+            <div>
+                <img src="@item.Image" alt="@item.Model" style="width: 250px; height: auto;" class="img-rounded">
+            </div>
+        </td>
+        <td>
+            <h3>
+                @Html.DisplayFor(modelItem => item.Model)
+            </h3>
+        </td>
+        <td>
+            <h3>
+                @Html.DisplayFor(modelItem => item.Places)
+            </h3>
+        </td>
+        <td>
+            <button type="button" onclick="setPlane(@item.Id,'@item.Image','@item.Model',@item.Places)" class="btn btn-info" data-toggle="modal" data-target="#myModal">Edit</button>
+        <td>
+            @Ajax.ActionLink("Delete", "Delete", new { id = @item.Id }, new AjaxOptions() { UpdateTargetId = "tabledata", OnSuccess = "alertify.success('Deleting success');" }, new { @class = "btn btn-warning" })
+        </td>
+    </tr>
+}

@@ -1,0 +1,41 @@
+﻿@model exam.Models.RegisterModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<div class="container">
+    @using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+
+        <h2 class="form-signin-heading">Register</h2>
+		
+		<div class="form-group">
+			@Html.LabelFor(m => m.UserName,new { @class = "sr-only"})
+            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "User name", style = "width: 20%;" })
+		</div>
+		
+        <div class="form-group">
+			@Html.LabelFor(m => m.Password,new { @class = "sr-only"})
+            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password", style = "width: 20%;" })
+		</div>
+		
+		<div class="form-group">
+			@Html.LabelFor(m => m.ConfirmPassword,new { @class = "sr-only"})
+            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "ConfirmPassword", style = "width: 20%;" })
+		</div>
+
+
+        <button class="btn btn-default" type="submit" style="width: 20%;">Register</button>
+        @Html.ValidationSummary()
+	}
+        <p>
+            @Html.ActionLink("Register", "Register") if you don't have an account.
+        </p>
+    
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Dal.Plane>
+
+@{
+    ViewBag.Title = "Index";
+
+    var saveOptions = new AjaxOptions()
+    {
+        UpdateTargetId = "tabledata",
+        Url = Url.Action("Save")
+    };
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create", new { controller = "Plane" }, new { @class = "btn btn-info" })
+</p>
+<table class="table table-hover" id="datatable">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Places)
+            </th>
+
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="tabledata">
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <h3>
+                        @Html.DisplayFor(modelItem => item.Id)</h3>
+                </td>
+                <td>
+                    <div>
+                        <img src="@item.Image" alt="@item.Model" style="width: 250px; height: auto;" class="img-rounded">
+                    </div>
+                </td>
+                <td>
+                    <h3>
+                        @Html.DisplayFor(modelItem => item.Model)
+                    </h3>
+                </td>
+                <td>
+                    <h3>
+                        @Html.DisplayFor(modelItem => item.Places)
+                    </h3>
+                </td>
+                <td>
+                    <button type="button" onclick="setPlane(@item.Id,'@item.Image','@item.Model',@item.Places)" class="btn btn-info" data-toggle="modal" data-target="#myModal">Edit</button>
+                <td>
+                    @Ajax.ActionLink("Delete", "Delete", new { id = @item.Id }, new AjaxOptions() { UpdateTargetId = "tabledata", OnSuccess = "alertify.success('Deleting success');" }, new { @class = "btn btn-warning" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Edit plane</h4>
+            </div>
+            <div class="modal-body">
+                @using (Ajax.BeginForm("Save", "Plane", saveOptions, new { @class = "form-horizontal", role = "form" }))
+                {
+                    
+                    <input type="hidden" id="id" name="Id" value="" class="form-control" />
+
+                    <div class="form-group">
+                        <label for="model" class="control-label">Model</label>
+                            Model:
+                    <input type="text" id="model" name="Model" value="" class="form-control" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="image" class="control-label">Image</label>
+                            Image:
+                    <input type="text" id="image" name="Image" value="" class="form-control" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="places" class="control-label">Places</label>
+                            Places:
+                    <input type="number" id="places" name="Places" value="" class="form-control" />
+                    </div>
+                                   
+                    <div class="form-group">
+                        <button type="submit" id="Save" class="btn btn-success form-control">Save</button>
+                    </div>
+                }
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+@section scripts
+{
+    <script>
+        function setPlane(id, image, model, places) {
+            $("#id").val(id);
+            $("#image").val(image);
+            $("#model").val(model);
+            $("#places").val(places);
+        }
+
+        function deleteFunc(id) {
+            $.ajax({
+                url: "@Url.Action("Delete")",
+                type: "GET",
+                data: "id=" + id,
+            });
+        }
+    </script>
+
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+}

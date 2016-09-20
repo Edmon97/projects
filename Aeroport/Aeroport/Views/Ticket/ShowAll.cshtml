@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Dal.Ticket>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>User</th>
+            <th>Flyght</th>
+            <th>Buy</th>
+        </tr>
+    </thead>
+    <tbody id="tabledata">
+        @foreach (var item in Model)
+        {
+            string flyght = item.Flyght.CityFrom.Name + " - " + item.Flyght.CityTo.Name+" ("+item.Flyght.Date+")";
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.User.UserName</td>
+                <td>@flyght</td>
+                <td>
+                    @Ajax.ActionLink("Delete","DeleteTicket",new{id=@item.Id},new AjaxOptions(){UpdateTargetId="tabledata", OnSuccess = "alertify.success('Deleting success');" },new{@class="btn btn-warning"})
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}

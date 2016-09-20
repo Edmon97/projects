@@ -1,0 +1,7 @@
+﻿@{
+    ViewBag.Title = "Cabinet";
+}
+
+<h2>Cabinet</h2>
+
+@Html.Action("ShowAll", "Ticket", new { name = HttpContext.Current.User.Identity.Name})

@@ -1,0 +1,16 @@
+﻿@model DAL.Book
+@Html.Action("ShowBooks")
+<tr>
+    <td>
+        <button type="submit">Ok</button>
+    </td>
+    <td>
+        @Html.EditorFor(m => m.Name)
+    </td>
+    <td>
+        @Html.EditorFor(m => m.Pages)
+    </td>
+    <td>
+        @Html.EditorFor(m => m.Sage)
+    </td>
+</tr>

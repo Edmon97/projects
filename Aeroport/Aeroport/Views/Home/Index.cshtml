@@ -1,0 +1,177 @@
+﻿@model IEnumerable<Dal.Flyght>
+@{
+    ViewBag.Title = "Home Page";
+    var flyghtFrom = Model.Where(c => c.CityFrom.Name == "Lviv").ToList();
+    var flyghtTo = Model.Where(c => c.CityTo.Name == "Lviv").ToList();
+}
+
+@section other
+{
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="~/Images/lviv_aero_1.jpg" alt="First slide">
+            </div>
+            <div class="item">
+                <img src="~/Images/lviv_aero_2.jpg" alt="Second slide">
+            </div>
+            <div class="item">
+                <img src="~/Images/lviv_aero_3.jpg" alt="Third slide">
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+}
+
+<ul class="list-inline">
+    <li><button onclick="tableShow('all_table')"  class="btn btn-info">All</button></li>
+    <li><button onclick="tableShow('arrivals_table')"  class="btn btn-info">Arrivals</button></li>
+    <li><button onclick="tableShow('departure_table')"  class="btn btn-info">Departure</button></li>
+</ul>
+
+<div class="departure" id="departure_table" style="display: block;">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>City To</th>
+                <th>State</th>
+                <th>Buy</th>
+            </tr>
+        </thead>
+        <tbody id="dep_tabledata">
+            @foreach (var flyght in flyghtFrom)
+            {
+                <tr>
+                    <td>@flyght.Date</td>
+                    <td>@flyght.CityTo.Name</td>
+                    @if (DateTime.Compare(Convert.ToDateTime(flyght.Date), DateTime.Now) > 0)
+                    {
+                        <td>Check-in </td>
+                        <td>
+                            <button id="buy" class="btn btn-success" onclick="buyTicket(@flyght.Id)">Buy</button>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>Take-off </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="arrivals" id="arrivals_table" style="display: none;">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>City From</th>
+                <th>State</th>
+                <th>Buy</th>
+            </tr>
+        </thead>
+        <tbody id="arr_tabledata">
+            @foreach (var flyght in flyghtTo)
+            {
+                <tr>
+                    <td>@flyght.Date</td>
+                    <td>@flyght.CityFrom.Name</td>
+
+                    @if (DateTime.Compare(Convert.ToDateTime(flyght.Date), DateTime.Now) > 0)
+                    {
+                        <td>Check-in </td>
+                        <td>
+                            <button id="buy" class="btn btn-success" onclick="buyTicket(@flyght.Id)">Buy</button>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>Arrived </td>
+                    }
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+<div class="all" id="all_table" style="display: none;">
+    <table class="table table-hover" >
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>City From</th>
+                <th>City To</th>
+                <th>State</th>
+                <th>Buy</th>
+            </tr>
+        </thead>
+        <tbody id="arr_tabledata">
+            @foreach (var flyght in Model)
+            {
+                <tr>
+                    <td>@flyght.Date</td>
+                    <td>@flyght.CityFrom.Name</td>
+                        <td>@flyght.CityTo.Name</td>
+
+                    @if (DateTime.Compare(Convert.ToDateTime(flyght.Date), DateTime.Now) > 0)
+                    {
+                        <td>Check-in </td>
+                        <td>
+                            <button id="buy" class="btn btn-success" onclick="buyTicket(@flyght.Id)">Buy</button>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>Missed </td>
+                    }
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+@section scripts
+{
+    <script>
+
+        function buyTicket(ticket) {
+            $.post("/Ticket/BuyTicket", { id: ticket, }, function (data) {
+                alertify.success("Reserving success");
+                console.log(data);
+            });
+        }
+
+        function tableShow(table) {
+
+            switch (table) {
+                case "departure_table":
+                    $("#departure_table").delay(100).fadeIn(100);
+                    $("#arrivals_table").fadeOut(100);
+                    $("#all_table").fadeOut(100);
+                    break;
+
+                case "arrivals_table":
+                    $("#arrivals_table").delay(100).fadeIn(100);
+                    $("#departure_table").fadeOut(100);
+                    $("#all_table").fadeOut(100);
+                    break;
+
+                case "all_table":
+                    $("#all_table").delay(100).fadeIn(100);
+                    $("#departure_table").fadeOut(100);
+                    $("#arrivals_table").fadeOut(100);
+                    break;
+            }
+        }
+    </script>
+}

@@ -1,0 +1,11 @@
+﻿@model IQueryable<DAL.Book>
+
+@foreach (var book in Model)
+{
+    <tr>
+        <td>@book.Id</td>
+        <td>@book.Name</td>
+        <td>@book.Pages</td>
+        <td>@book.Sage</td>
+    </tr>
+}

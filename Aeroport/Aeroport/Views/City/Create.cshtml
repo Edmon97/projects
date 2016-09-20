@@ -1,0 +1,36 @@
+﻿@model Dal.City
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create city</h2>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@using (Html.BeginForm("Create", "City", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.ValidationSummary(true)
+    
+    <div class="form-group">
+        <label for="name" class="control-label">@Html.LabelFor(model => model.Name)</label>
+        @Html.TextBoxFor(model => model.Name, new { id = "name", @class = "form-control", placeholder = "Enter city name" })
+        @Html.ValidationMessageFor(model => model.Name)
+    </div>
+    
+    <div class="form-group">
+        <label for="image" class="control-label">@Html.LabelFor(model => model.Image)</label>
+        @Html.TextBoxFor(model => model.Image, new { id = "image", @class = "form-control", placeholder = "Enter image url" })
+        @Html.ValidationMessageFor(model => model.Image)
+    </div>
+    
+    <div class="form-group">
+    <input type="submit" value="Create" class="btn btn-success form-control" />
+        </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

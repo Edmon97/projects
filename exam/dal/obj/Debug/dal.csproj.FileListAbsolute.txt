@@ -1,0 +1,9 @@
+V:\Programming\asp\exam\dal\bin\Debug\dal.dll.config
+V:\Programming\asp\exam\dal\bin\Debug\dal.dll
+V:\Programming\asp\exam\dal\bin\Debug\dal.pdb
+V:\Programming\asp\exam\dal\bin\Debug\EntityFramework.dll
+V:\Programming\asp\exam\dal\bin\Debug\EntityFramework.SqlServer.dll
+V:\Programming\asp\exam\dal\bin\Debug\EntityFramework.xml
+V:\Programming\asp\exam\dal\bin\Debug\EntityFramework.SqlServer.xml
+V:\Programming\asp\exam\dal\obj\Debug\dal.dll
+V:\Programming\asp\exam\dal\obj\Debug\dal.pdb

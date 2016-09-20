@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Dal.Ticket>
+
+@foreach (var item in Model)
+{
+    string flyght = item.Flyght.CityFrom.Name + " -> " + item.Flyght.CityTo.Name;
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.User.UserName</td>
+        <td>@flyght</td>
+        <td>
+            @Ajax.ActionLink("Delete", "DeleteTicket", new { id = @item.Id }, new AjaxOptions() { UpdateTargetId = "tabledata", OnSuccess = "alertify.success('Deleting success');"  }, new { @class = "btn btn-success" })
+        </td>
+    </tr>
+}

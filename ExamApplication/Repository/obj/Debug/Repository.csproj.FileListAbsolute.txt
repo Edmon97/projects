@@ -1,0 +1,9 @@
+E:\web api\exam\ExamApplication\Repository\bin\Debug\Repository.dll.config
+E:\web api\exam\ExamApplication\Repository\bin\Debug\Repository.dll
+E:\web api\exam\ExamApplication\Repository\bin\Debug\Repository.pdb
+E:\web api\exam\ExamApplication\Repository\bin\Debug\EntityFramework.dll
+E:\web api\exam\ExamApplication\Repository\bin\Debug\EntityFramework.SqlServer.dll
+E:\web api\exam\ExamApplication\Repository\bin\Debug\EntityFramework.xml
+E:\web api\exam\ExamApplication\Repository\bin\Debug\EntityFramework.SqlServer.xml
+E:\web api\exam\ExamApplication\Repository\obj\Debug\Repository.dll
+E:\web api\exam\ExamApplication\Repository\obj\Debug\Repository.pdb

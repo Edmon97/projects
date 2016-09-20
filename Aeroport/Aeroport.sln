@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeroport", "Aeroport\Aeroport.csproj", "{993795E0-E7AA-4455-A83E-2493CD32D428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dal", "Dal\Dal.csproj", "{ED576008-5135-4096-94CC-44CE03E3A023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{564645D8-8364-4DDE-803F-15DD5D652AB4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{993795E0-E7AA-4455-A83E-2493CD32D428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993795E0-E7AA-4455-A83E-2493CD32D428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993795E0-E7AA-4455-A83E-2493CD32D428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993795E0-E7AA-4455-A83E-2493CD32D428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED576008-5135-4096-94CC-44CE03E3A023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED576008-5135-4096-94CC-44CE03E3A023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED576008-5135-4096-94CC-44CE03E3A023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED576008-5135-4096-94CC-44CE03E3A023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564645D8-8364-4DDE-803F-15DD5D652AB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564645D8-8364-4DDE-803F-15DD5D652AB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564645D8-8364-4DDE-803F-15DD5D652AB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564645D8-8364-4DDE-803F-15DD5D652AB4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

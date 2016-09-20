@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Admin Panel";
+    Styles.Render("~/Content/table");
+}
+
+<h2>Admin panel for editing users, tickets, flyghts, planes and cities</h2>
+
+@Html.ActionLink("Show users", "Index", new { controller="User"}, new { @class = "btn btn-info" })
+@Html.ActionLink("Show tickets", "ShowAll", new { controller="Ticket"}, new { @class="btn btn-info"})
+@Html.ActionLink("Show flyghts", "Index", new { controller="Flyght"}, new { @class="btn btn-info"})
+@Html.ActionLink("Show cities", "Index", new { controller="City"}, new { @class="btn btn-info"})
+@Html.ActionLink("Show planes", "Index", new { controller="Plane"}, new { @class="btn btn-info"})

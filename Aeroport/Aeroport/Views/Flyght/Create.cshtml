@@ -1,0 +1,59 @@
+﻿@using Dal
+@model Flyght
+
+@{
+    ViewBag.Title = "Create";
+    Aeroport.Models.CitySelectedList cityList = new Aeroport.Models.CitySelectedList();
+    Aeroport.Models.PlaneSelectedList planeList = new Aeroport.Models.PlaneSelectedList();
+}
+
+<h2>Create flyght</h2>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@using (Html.BeginForm("Create", "Flyght", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.ValidationSummary(true)
+
+    @Html.HiddenFor(model=>model.Id)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.CityFrom, new { @class="control-label"})
+        @Html.DropDownListFor(model => model.CityFrom.Id, cityList.Cities, new { @class="form-control", id="CityFrom"})
+            @Html.ValidationMessageFor(model => model.CityFrom)
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.CityTo, new { @class="control-label"})
+        @Html.DropDownListFor(model => model.CityTo.Id, cityList.Cities, new { @class="form-control", id="CityTo"})
+            @Html.ValidationMessageFor(model => model.CityTo)
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.Plane, new { @class="control-label"})
+        @Html.DropDownListFor(model => model.Plane.Id, planeList.Planes, new { @class="form-control", id="Plane"})
+            @Html.ValidationMessageFor(model => model.Plane.Model)
+    </div>
+    
+    <div class="form-group">
+        @Html.LabelFor(model => model.Date, new { @class="control-label"})
+        @Html.TextBoxFor(m => m.Date, new { @class="datepicker form-control", id="datepicker" })
+            @Html.ValidationMessageFor(model => model.Date)
+    </div>
+
+    <input type="submit" value="Create" class="btn btn-success form-control"/>
+  
+}
+
+@section Scripts {
+     <script>
+         $(function () {
+             $("#datepicker").datepicker({ dateFormat: 'dd/mm/yy' });
+         });
+  </script>
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/jqueryui")
+    @Styles.Render("~/Content/themes/base/css")
+}

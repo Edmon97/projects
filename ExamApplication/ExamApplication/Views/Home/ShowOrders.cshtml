@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Dal.Models.Order>
+@{
+    ViewBag.Title = "Show Orders";
+}
+
+<h2>All orders</h2>
+
+@*<button class="btn btn-info" onclick="changeClick()" data-toggle="modal" data-target="#editModal">Create</button>*@
+@Html.ActionLink("Create","CreateOrder",new { controller = "Home" }, new { @class="btn btn-info"})
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Provider</td>
+            <td>Detail</td>
+            <td>Project</td>
+            <td>Count</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody id="ordtable">
+        @*@foreach(var order in Model)
+        {
+            <tr>
+                <td>
+                    @order.Id
+                </td>
+                <td>
+                    @order.Provider.Name
+                </td>
+                <td>
+                    @order.Detail.Name
+                </td>
+                <td>
+                    @order.Project.Name
+                </td>
+                <td>
+                    @order.Count
+                </td>
+                <td>
+                <button id='deleteBt' class='btn btn-warning' onclick='deleteOrder(@order.Id)'>Delete</button>
+                </td>
+            </tr>
+        }*@
+    </tbody>
+</table>
+
+@section scripts
+{
+    <script src="~/Scripts/order_script.js"></script>
+}

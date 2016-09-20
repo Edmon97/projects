@@ -1,0 +1,10 @@
+﻿@model IQueryable<DAL.Sage>
+
+@foreach (var sage in Model)
+{
+    <tr>
+        <td>@sage.Id</td>
+        <td>@sage.Name</td>
+        <td>@sage.Age</td>
+    </tr>
+}

@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@* This table show count of files in directories and sundirectories that are:
+     <= 10mb
+     > 10mb AND <= 50mb
+     >= 100mb
+
+        On click button with text "Show files" you can see under table list with paths and sizes that meet
+    requirements
+*@
+<table class="table table-bordered data">
+    <thead>
+        <tr>
+            <th>Less 10Mb</th>
+            <th>10Mb-50Mb</th>
+            <th>More 100Mb</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="row in rows">
+            <td>{{row.l10}}</td>
+            <td>{{row.l50}}</td>
+            <td>{{row.m100}}</td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn btn-link" ng-click="showFiles('l10')">Show files</button>
+            </td>
+            <td>
+                <button class="btn btn-link" ng-click="showFiles('l50')">Show files</button>
+            </td>
+            <td>
+                <button class="btn btn-link" ng-click="showFiles('m100')">Show files</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+@* List files in subdirectories with path and size *@
+<div ng-if="substyle">
+    <ul class="list-unstyled">
+        <li ng-repeat="file in subfiles">
+            <strong>{{file.Path}}:</strong> {{file.Size}} Mb
+        </li>
+        <li><button class="btn btn-link" ng-click="hideFiles()">Hide files</button></li>
+    </ul>
+</div>
+
+@* This div show current path and directories and files by this path. *@
+<div class="well">
+    @* Current path *@
+    <div class="path">
+        <p>
+            <strong>Current path:</strong>
+            <span id="path" ng-bind="data.current_path"></span>
+        </p>
+    </div>
+    @* Directories and files *@
+    <div class="file-list">
+        <ul class="list-unstyled">
+            @* This is button "Back" *@
+            <li ng-show="showBack">
+                <button type="button" class="btn btn-link" ng-click="openFolder(data.parent)"><span class="glyphicon glyphicon-arrow-left"></span> Back</button>
+            </li>
+            <li ng-repeat="d in data.directories">
+                <button type="button" class="btn btn-link" ng-click="openFolder(d.Path)"><span class="glyphicon glyphicon-folder-close"></span> {{d.Name}}</button>
+            </li>
+            <li ng-repeat="f in data.files">
+                <button type="button" class="btn btn-link" ng-click="openFolder(f.Path)"><span class="glyphicon glyphicon-file"></span> {{f.Name}}</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@section scripts
+{
+    <script src="~/Scripts/core.js"></script>
+}

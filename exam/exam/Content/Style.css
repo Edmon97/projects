@@ -1,0 +1,20 @@
+﻿.tovar {
+    text-align: center;
+    border: 1px solid #E0E0E0;
+    margin: 2px;
+    padding: 10px;
+}
+
+    .tovar img {
+        max-height: 300px;
+        width: auto;
+        margin: 10px;
+        display: block;
+        margin: auto;
+    }
+
+    .tovar input[type="submit"] {
+        position: relative;
+        width: 50%;
+        margin: 5px;
+    }

@@ -1,0 +1,11 @@
+﻿@using DAL
+@model IQueryable<Order>
+
+@foreach (var order in Model)
+{
+    <tr>
+        <td>@order.Id</td>
+        <td>@order.Book</td>
+        <td>@order.User</td>
+    </tr>
+}

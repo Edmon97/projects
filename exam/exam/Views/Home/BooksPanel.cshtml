@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "BooksPanel";
+    var options = new AjaxOptions()
+    {
+        UpdateTargetId = "tabledata"
+    };
+}
+
+<h2 class="sub-header">Books</h2>
+@Ajax.ActionLink("Add Book", "AddBook",
+                        new AjaxOptions
+                        {
+                            UpdateTargetId = "tabledata",
+                            LoadingElementId = "loadingIndicator"
+                        })
+<br>
+@using (Ajax.BeginForm("AddBook", options))
+{
+    <div id="loadingIndicator" style="display: none;">Download...</div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Pages</th>
+                    <th>SageId</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabledata">
+                @Html.Action("ShowBooks")
+            </tbody>
+
+        </table>
+    </div>
+}
+
+@section scripts
+{
+    @*Ненавязивый JavaScript для выполнения запроса на сервер без полного обновления страницы*@
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}

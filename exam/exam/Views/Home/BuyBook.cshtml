@@ -1,0 +1,18 @@
+﻿@using DAL
+@model IQueryable<Book>
+
+@foreach (var book in Model)
+{
+    <tr>
+        <td>@book.Id</td>
+        <td>@book.Name</td>
+        <td>
+             @Ajax.ActionLink("Buy", "BuyBook", new { id = book.Id },
+                new AjaxOptions
+                {
+                    UpdateTargetId = "tabledata",
+                    LoadingElementId = "loadingIndicator"
+                })
+        </td>
+    </tr>
+}

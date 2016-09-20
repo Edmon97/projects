@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Dal.City>
+
+@foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <h3>@Html.DisplayFor(modelItem => item.Name)</h3>
+            </td>
+            <td>
+                <div>
+                    <img src="@item.Image" alt="@item.Name" style="width: 150px; height: auto;" class="img-rounded">
+                </div>
+            </td>
+            <td>
+                <button type="button" onclick="setCity(@item.Id,'@item.Name','@item.Image')" class="btn btn-info" data-toggle="modal" data-target="#myModal">Edit</button>
+            <td>
+                @Ajax.ActionLink("Delete", "Delete", new { id = @item.Id }, new AjaxOptions() { UpdateTargetId = "tabledata", OnSuccess = "alertify.success('Deleting success');" }, new { @class = "btn btn-warning" })
+            </td>
+        </tr>
+    }

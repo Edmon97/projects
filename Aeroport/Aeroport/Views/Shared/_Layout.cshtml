@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/css/carousel.css" rel="stylesheet" />
+    <link href="~/Content/alertify/alertify.core.css" rel="stylesheet" />
+    <link href="~/Content/alertify/alertify.default.css" rel="stylesheet" />
+    @Styles.Render("~/Content/table");
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        #footer {
+            position: absolute;
+            bottom: 0;
+            padding: 15px;
+            width: 100%;
+            height: 40px;
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Lviv Aeroport", "Index", new { controller = "Home" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        @if (User.Identity.Name == "admin")
+                        {
+                            <li>@Html.ActionLink("Admin", "AdminPanel", "Home")</li>
+                        }
+                        <li>@Html.ActionLink("Cabinet", "ShowAll", new { controller="Ticket", name= User.Identity.Name})</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+
+    @RenderSection("other", required: false)
+
+    <br />
+    <br />
+    <br />
+
+
+
+    <div class="container">
+
+        @RenderBody()
+
+    </div>
+
+    @*    <div id="footer">
+        <div class="container" style="display: block;">
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p class="text-muted">Lviv Aeroport @DateTime.Now.Year</p>
+        </div>
+    </div>*@
+
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Content/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Content/bootstrap/js/docs.min.js"></script>
+    <script src="~/Content/alertify/alertify.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

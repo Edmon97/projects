@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "SagesPanel";
+    var options = new AjaxOptions()
+    {
+        UpdateTargetId = "tabledata"
+    };
+}
+
+<h2 class="sub-header">Sages</h2>
+@Ajax.ActionLink("Add Sage", "AddSage",
+                        new AjaxOptions
+                        {
+                            UpdateTargetId = "tabledata",
+                            LoadingElementId = "loadingIndicator"
+                        })
+<br>
+@using (Ajax.BeginForm("AddSage", options))
+{
+    <div id="loadingIndicator" style="display: none;">Download...</div>
+    <div class="table-responsive">
+        <table class="table table-striped">
+
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <tbody id="tabledata">
+                @Html.Action("ShowSages")
+            </tbody>
+
+        </table>
+    </div>
+}
+
+@section scripts
+{
+    @*Ненавязивый JavaScript для выполнения запроса на сервер без полного обновления страницы*@
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}

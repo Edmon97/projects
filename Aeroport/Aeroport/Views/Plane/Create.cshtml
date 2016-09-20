@@ -1,0 +1,44 @@
+﻿@model Dal.Plane
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create plane</h2>
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@using (Html.BeginForm("Create", "Plane", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.ValidationSummary(true)
+
+        <legend>Plane</legend>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Model, new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.Model, new { @class = "form-control", placeholder="Enter model name" })
+            @Html.ValidationMessageFor(model => model.Model)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Places, new { @class = "control-label" })
+            @Html.EditorFor(model => model.Places, new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Places)
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Image, new { @class = "control-label" })
+            @Html.TextBoxFor(model => model.Image, new { @class = "form-control", placeholder="Enter image url" })
+            @Html.ValidationMessageFor(model => model.Image)
+        </div>
+
+        <input type="submit" value="Create" class="btn btn-success form-control"/>
+}
+
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,30 @@
+﻿@model int
+@{
+    ViewBag.Title = "Cabinet";
+}
+
+<h2 class="sub-header">Orders</h2>
+
+	<div class="table-responsive">
+	    <table class="table table-striped">
+	        
+	        <thead>
+	        <tr>
+	            <th>Id</th>
+	            <th>Book</th>
+                <th>User</th>
+	        </tr>
+	        </thead>
+
+	        <tbody id="tabledata">
+	        @Html.Action("ShowOrders", new {id = Model})
+	        </tbody>
+
+	    </table>
+	</div>
+
+@section scripts
+{
+    @*Ненавязивый JavaScript для выполнения запроса на сервер без полного обновления страницы*@
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}

@@ -1,0 +1,54 @@
+﻿@model Dal.Models.Order
+
+@{
+    ViewBag.Title = "CreateOrder";
+    ExamApplication.Models.ApplicationDbContext db = new ExamApplication.Models.ApplicationDbContext();
+    var providers = db.Providers.ToList().Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() });
+    var details = db.Details.ToList().Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() });
+    var projects = db.Projects.ToList().Select(p => new SelectListItem() { Text = p.Name, Value = p.Id.ToString() });
+}
+
+<h2>CreateOrder</h2>
+
+@using (Html.BeginForm()) 
+{
+    
+    <div class="form-horizontal">
+        <h4>Order</h4>
+        <hr />
+        <div class="form-group">
+            <div class="control-label col-md-2">Provider</div>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model=>model.Provider.Id,providers, new { id = "editProvider", @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">Detail</div>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Detail.Id, providers, new { id = "editDetail", @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">Project</div>
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Project.Id, projects, new { id = "editProject", @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="control-label col-md-2">Count</div>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Count, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

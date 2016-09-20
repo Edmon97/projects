@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Index</h2>
+
+<h2 class="sub-header">Books</h2>
+
+	<div class="table-responsive">
+	    <table class="table table-striped">
+	        
+	        <thead>
+	        <tr>
+	            <th>Id</th>
+	            <th>Name</th>
+                <th>Buy</th>
+	        </tr>
+	        </thead>
+
+	        <tbody id="tabledata">
+	        @Html.Action("BuyBook")
+	        </tbody>
+
+	    </table>
+	</div>
+
+@section scripts
+{
+    @*Ненавязивый JavaScript для выполнения запроса на сервер без полного обновления страницы*@
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+}

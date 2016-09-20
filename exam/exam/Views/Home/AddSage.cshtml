@@ -1,0 +1,13 @@
+﻿@model DAL.Sage
+@Html.Action("ShowSages")
+<tr>
+    <td>
+        <button type="submit">Ok</button>
+    </td>
+    <td>
+        @Html.EditorFor(m => m.Name)
+    </td>
+    <td>
+        @Html.EditorFor(m=>m.Age)
+    </td>
+</tr>

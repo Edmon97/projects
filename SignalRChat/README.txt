@@ -1,0 +1,1 @@
+This simple chat and it use SignalR.

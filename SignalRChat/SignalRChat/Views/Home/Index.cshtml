@@ -1,0 +1,46 @@
+﻿<div class="container">
+    <div class="row">
+
+        <div id="loginBlock">
+            <h2>Chat</h2>
+            <label for="txtUserName" class="control-label">Login:</label><br />
+            <input id="txtUserName" type="text" class="form-control"  style="width:100%;"/>
+            <input id="btnLogin" type="button" value="Sign in" class="btn btn-success" style="width:100%;"/>
+        </div>
+        <div id="chatBody">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="header"></div>
+                    <div id="inputForm">
+                        <textarea class="form-control" id="message" rows="3"></textarea><br />
+                        <input type="button" id="sendmessage" value="Send" class="btn btn-success" style="width:100%;"/>
+                        <h5>You have <span id="newMessagesCount">0</span> new messages</h5>
+                        <input id="showMessages" type="button" class="btn btn-info" value="Show new messages"  style="width:100%;"/>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                        <table class="table table-striped" id="chatroom">
+                            <caption><h2>Chat</h2></caption>
+                        </table>
+                </div>
+                <div class="col-md-4">
+                    <div id="chatusers">
+                        <h3>All users</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input id="hdId" type="hidden" />
+        <input id="username" type="hidden" />
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <!--Ссылка на библиотеку SignalR -->
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <!--Ссылка на автоматически сгенерированный скрипт хаба SignalR -->
+    <script src="~/signalr/hubs"></script>
+    <script src="~/Scripts/util.js"></script>
+}
